@@ -2,14 +2,14 @@
 //  ViewModel.swift
 //  testActor
 //
-//  Created by 古賀貴伍社用 on 2022/03/08.
+//  Created by 古賀貴伍社用 on 2022/03/10.
 //
 
 import Foundation
 
 actor ViewModel:ObservableObject {
     
-    // @MainActor メインスレッドで参照する必要がある為　宣言が必要    
+    // @MainActor メインスレッドで参照する必要がある為　宣言が必要
     @MainActor @Published var message: String?
     
     var count: Int = 0
